@@ -1,29 +1,29 @@
 create table series (
-    id INTEGER PRIMARY KEY,
+    id integer primary key,
     title varchar,
     author_id integer,
     subgenre_id integer
 );
 
 create table subgenres (
-    id INTEGER PRIMARY KEY,
+    id integer primary key,
     name varchar
 );
 
 create table authors (
-    id INTEGER PRIMARY KEY,
+    id integer primary key,
     name varchar
 );
 
 create table books (
-    id INTEGER PRIMARY KEY,
+    id integer primary key,
     title varchar,
     year integer,
     series_id integer
 );
 
 create table characters (
-    id INTEGER PRIMARY KEY,
+    id integer primary key,
     name varchar,
     species varchar,
     motto VARCHAR,
